@@ -4,7 +4,7 @@ on:
   workflow_call:
     secrets:
       PERSONAL_TOKEN:
-        description: 'A token passed from the caller workflow'
+        description: 'TOKEN RECIBIDO'
         required: true
 
 jobs:
