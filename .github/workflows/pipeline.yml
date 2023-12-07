@@ -1,7 +1,11 @@
 name: "Pipeline"
 
 on:
-    workflow_dispatch:
+  workflow_call:
+    inputs:
+      node:
+        required: true
+        type: string
 
 jobs:
     respuesta_a_padre:
