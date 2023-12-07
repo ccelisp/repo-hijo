@@ -14,4 +14,4 @@ jobs:
         steps:
             -   name: Hola
                 run: |
-                    echo "Me Llamaron!"
+                    echo "Me Llamaron! y el TOKEN es ${{ secrets.PERSONAL_TOKEN }}"
