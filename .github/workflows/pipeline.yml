@@ -2,6 +2,10 @@ name: "Pipeline"
 
 on:
   workflow_call:
+    secrets:
+      PERSONAL_TOKEN:
+        description: 'A token passed from the caller workflow'
+        required: true
 
 jobs:
     respuesta_a_padre:
