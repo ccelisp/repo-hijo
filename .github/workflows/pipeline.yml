@@ -1,18 +1,13 @@
 name: "Pipeline"
 
 on:
-    push:
-        branches:
-            - "main"
+    workflow_dispatch:
 
 jobs:
-    build:
+    respuesta_a_padre:
         runs-on: ubuntu-latest
 
         steps:
-            -   name: checkout repository
-                uses: actions/checkout@v2
-
-            -   name: Saludar
+            -   name: Hola
                 run: |
                     echo "Me Llamaron!"
